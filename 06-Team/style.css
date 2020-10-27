@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+}
+
+.card {
+    border-radius: 16px;
+    display: flex;
+    max-width: 872px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.card__main-content {
+    max-width: 472px;
+    margin: 24px;
+}
+
+.card__occupation {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8E90A6;
+}
+
+.card_name {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.card_description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #555770
+}
+.card__image-wrapper {
+display: flex;
+justify-content: center;
+}
+.card__image {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+@media only screen and (max-width: 818px) {
+    .card__image {
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card_name {
+        font-size: 5vw;
+    }
+
+    .card_description {
+        font-size: 2.8vw;
+  }
+
+  .card__occupation{
+    font-size: 2.6vw;
+  }
+.card__main-content {
+    margin: 2vw;
+}
+
+
+}
+
+.card--secondary    {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__header   {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.card__image--secondary {
+    margin: 24px;
+    border-radius: 50%;
+}
+
+
+.card__main-content--secondary{
+    margin: 24px;
+}
+
+.card__footer {
+    padding: 0 24px 24px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.card__header--centered {
+    display: flex;
+flex-direction: column;
+}
+
+.card__image-wrapper--centered {
+    text-align: center;
+}
+
+.card__image--secondary--centered {
+    margin-bottom: 4px;
+}
+.card__main-content--secondary--centered {
+    text-align: center;
+    margin-top: 16px;
+}
